@@ -4,7 +4,7 @@ export default function SigninCard() {
     <div className="row box">
         <div className="col s12 center-align ">
           <div className="col l6 m6 s6">
-            <h2>Bem Vindo ao</h2>
+            <h2>Bem-Vindo ao</h2>
             <h2><b>Komander.</b></h2>
             
           </div>
