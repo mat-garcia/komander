@@ -1,7 +1,7 @@
 
 ## This app
 
-<p>This app is a prototype project **Komander Hotel System**</p>. 
+<p>This app is a prototype project *Komander HSys*</p>. 
 <p> Powered by ReactJS with framework next.js. </p>
 
 <img src="./public/komander.png"/>
