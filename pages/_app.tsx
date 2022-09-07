@@ -4,6 +4,7 @@ import "materialize-css/dist/css/materialize.min.css";
 import "../styles/css/material-icons.css";
 import "../styles/globals.css";
 
+
 import type { AppProps } from 'next/app'
 
 function MyApp({ Component, pageProps }: AppProps) {
