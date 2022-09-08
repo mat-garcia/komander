@@ -1,8 +1,11 @@
 import { useState } from "react"
-import M from "materialize-css"
+import { useRouter } from "next/router";
+import { toast } from "react-toastify";
+
 
 export default function SigninCard() {
- 
+    
+    const router = useRouter()
     const [user, setUser] = useState('');
     const [password,setPasword] = useState('');
     console.log('usuario ' + user)
@@ -11,16 +14,21 @@ export default function SigninCard() {
       if((user && password).length > 0){
         if( user == 'admin' && password == 'cph@2020'){
           
+          router.push('/Home');
+        }else{
+          toast.error('Usuário ou Senha invalidos!',{
+            theme: "dark"
+          })
         }
       
       }else{
-        var toastHTML = '<span>Preencha todos os campos!</span><button class="btn-flat toast-action">Atenção</button>';
-        M.toast({html: toastHTML});
+        
+        toast.dark('Preencha todos os campos!')
       }
     }
     return (
         
-    <div className="row box">
+    <div className="row box white-text">
         <div className="col s12 center-align ">
           <div className="col l6 m6 s6">
             <h2>Bem-Vindo ao</h2>
